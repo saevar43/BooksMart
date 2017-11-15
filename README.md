@@ -4,7 +4,9 @@ BooksMart - An innovative software solution that offers a simple solution for se
 
 ## Getting Started
 
-You can view the project here: [BooksMart](https://booksmart.herokuapp.com/app/)
+You can view the project here: [BooksMart](https://books-mart.herokuapp.com/app/)
+
+To run the project you'll first need to download it as a whole and un-zip it. Next you'll need a Integrated Development Environment (IDE) to run it and a software to host it locally on a virtual server.
 
 ### Prerequisites
 
@@ -25,7 +27,7 @@ You can view the project here: [BooksMart](https://booksmart.herokuapp.com/app/)
 
 ## Authors
 
-### * **Teymi 8**
+### **Teymi 8**
 * **Kári Geir Gunnarsson** - (kgg5@hi.is)
 * **Pétur Erlendsson** - (pee4@hi.is)
 * **Suzanna Sofia** - (ssp5@hi.is)
