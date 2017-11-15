@@ -1,0 +1,838 @@
+@charset "ISO-8859-1";
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+	height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+	width: 100%;
+	min-height: 1000px;
+	background-size: cover;
+}
+
+.menu {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	max-width: 2000px;
+	height: 40px;
+	justify-content: space-between;
+}
+
+.menuleft {
+	display: flex;
+	width: 100%;
+	margin: 5px;
+	justify-content: flex-start;
+	display: flex;
+	align-items: center;
+	padding: 4em 0em 0em 4em;
+}
+
+.menuright {
+	display: flex;
+	width: 100%;
+	margin: 5px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 4em 8em 0em 0em;
+}
+
+.menubutton {
+	font-family: Merriweather, georgia, serif;
+	font-size: 1.5em;
+	padding: 0.3rem 0.6rem;
+	margin-left: 0.rem;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: 0.2rem;
+}
+
+a:hover {
+	color: #dddddd;
+}
+
+.menutext {
+	font-family: Merriweather, georgia, serif;
+	padding: 0.3rem 0.6rem;
+	margin-left: 0.6rem;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.fp-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("book2v2.jpg");
+	background-size: cover;
+}
+
+#container {
+	min-height: 100%;
+	position: relative;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#content {
+	padding-top: 14em;	
+}
+
+.search-bar {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchform-main:hover {
+	text-decoration: none;
+}
+
+
+.input-field {
+	height: 2rem;
+	width: 90%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+	border: none;
+	background: transparent;
+	outline:none;
+	border-bottom: 2px solid white;
+	color: white;
+	padding-left: 1rem;
+ }
+
+.input-btn-wrapper {
+	margin: 0;
+	height: 2rem;
+	border-bottom: 2px solid white;
+	background: transparent;
+	padding-bottom: 1rem;
+	   padding-left: 1rem;
+}
+
+.input-btn {
+	width: 100%;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding-top: 0.25rem;
+}
+
+.input-btn:focus {
+	outline:0;
+ }
+
+::placeholder {
+	color: #969696;
+}
+
+.placeholder-white::placeholder {
+	color: ghostwhite;
+	opacity: 1;
+}
+
+.header--text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	border: none;
+	font-family: Merriweather, georgia, serif;
+	font-size: 2rem;
+	margin-bottom: 25px;
+	color: white;
+}
+
+.fp-logo-2 {
+	height: 57%;
+	width: 57%;
+}
+
+.footer {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.footercontent {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.footertext {
+	align-self: center;
+	max-width: max-content;
+	color: #eee;
+}
+
+.footerhr {
+	border-color: black;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(244, 244, 244, 0.76);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	font-size: 0.8em;
+	border-radius: 25px;
+	padding: 15px; 
+	width: 170px;
+	height: 130px; 
+ }
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	background: transparent;
+	opacity: 1; /* css standard */
+	filter: alpha(opacity=100); /* internet explorer */
+ }
+
+.dropdown-content a:hover {
+	text-decoration: none;
+	background-color: #eaeaea;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropbtn {
+	font-family: Merriweather, georgia, serif;
+	padding: 5px 10px;
+	margin-left: 5px;
+	overflow: hidden;
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: 4px;
+	background-color: transparent;
+	border: none;
+}
+
+.error-msg {
+	color: rgba(255, 0, 0, 0.89);
+	font-family: Merriweather, georgia, serif;
+	font-size: 0.8rem
+}
+
+/**
+ * -------------
+ * frontpage CSS
+ * -------------
+**/
+
+.main--frontpage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.fp-logo {
+	margin: -5.5rem 1rem -1rem 1rem;
+	width: 10%;
+}
+
+/**
+ * ------------------
+ * advancedSearch CSS
+ * ------------------
+**/
+
+.header--AdvSearch {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	border: none;
+	font-family: Merriweather, georgia, serif;
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+}
+
+.adv-search-title {
+	color: white;
+}
+
+/**
+ * ---------
+ * login CSS
+ * ---------
+**/
+
+.header--login {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	border: none;
+	font-family: Merriweather, georgia, serif;
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+}
+
+.login-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -10rem;
+}
+
+.signin-register-font {
+	font-family: Merriweather, georgia, serif;
+    font-size: 1.7rem;
+}
+
+.login-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+.login {
+	margin: 3rem;
+	width: 20rem;
+}
+
+.login-screen {
+	background-color: rgba(255, 255, 255, 0.57);
+	padding: 2rem;
+	border-radius: 25px;
+	border: 1px solid ghostwhite;
+	
+}
+
+.app-title {
+	text-align: center;
+	color: #777;
+}
+
+.login-form {
+	text-align: center;
+}
+
+.control-group {
+	margin-bottom: 0.5rem;
+}
+
+.input-login {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.95);
+	border: 2px solid transparent;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 0.6rem 0;
+	width: 15rem;
+	transition: border .5s;
+	margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.input-login:focus {
+	border: 2px solid #3498DB;
+	box-shadow: none;
+}
+
+.control-group input[type="submit"] {
+	background: rgba(168, 142, 136, 0.88);
+	color: rgb(255, 255, 255);
+}
+
+.control-group input[type="submit"]:hover {
+	    background: rgba(134, 114, 110, 0.88);
+	color: rgb(255, 255, 255);
+}
+
+/**
+ * -------------
+ * addBook CSS
+ * -------------
+**/
+
+.ab-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+.addBook-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -13rem;
+}
+
+.addBook {
+	width: 20rem;
+}
+
+.addBook-font {
+	color: #fefeffc9;
+	font-family: Merriweather, georgia, serif;
+}
+
+.addBook-screen {
+	background-color: rgba(109, 74, 21, 0.82);
+	padding: 2rem;
+	border-radius: 25px;
+	border: 1px solid ghostwhite;
+}
+
+.app-title {
+	text-align: center;
+	color: #777;
+}
+
+.addBook-form {
+	text-align: center;
+}
+
+.addBook-control-group {
+	margin-bottom: 0.5rem;
+}
+
+.addBook-control-group input[type="submit"] {
+	background: rgb(142, 134, 132);
+	color: rgb(255, 255, 255);
+	border: 2px solid #b4bfc791;
+}
+
+.addBook-control-group input[type="submit"]:hover {
+	background: rgba(134, 114, 110, 0.88);
+	color: rgb(255, 255, 255);
+}
+
+.input-addBook {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.95);
+	border: 2px solid transparent;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 0.4rem 0;
+	width: 15rem;
+	transition: border .5s;
+	margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.input-addBook:focus {
+	border: 2px solid #3498DB;
+	box-shadow: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+/**
+ * --------------
+ * createUser CSS
+ * --------------
+**/
+
+.header--createUser {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	border: none;
+	font-family: Merriweather, georgia, serif;
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+}
+
+/**
+ * ------------------
+ * displayResults CSS
+ * ------------------
+**/
+
+.sp-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+.results-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.results {
+ 	margin-top: 12rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 75%;
+	margin-bottom: 2.75%;
+}
+
+.results-sidebar {
+	background-color: rgba(1,1,1,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	height: 100%;
+}
+
+.side-search-bar {
+	margin-top: 16rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.side-input-field {
+	height: 2rem;
+	width: 90%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+	border: none;
+	background: transparent;
+	outline:none;
+	border-bottom: 2px solid white;
+	color: white;
+ }
+
+.side-input-btn-wrapper {
+	margin: 0;
+	width: 10%;
+	height: 2rem;
+	border-bottom: 2px solid white;
+	background: transparent;
+}
+
+
+
+.side-input-btn {
+	width: 100%;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding-top: 0.35rem;
+ }
+ 
+ .side-input-btn:focus {
+ 	outline:0;
+ }
+
+.results-table {
+	overflow: hidden;
+	font-family: Merriweather, georgia, serif;
+	font-size: 0.85rem;
+ 	margin-top: 5%; 
+	width: 7git 5%;
+	border-spacing: 0;
+	border: 1px solid black;
+	background: rgba(255,255,255,0.6);
+}
+
+.results-table-row:nth-child(odd) {
+	background: rgba(255,255,255,0.05);
+}
+
+.results-table-row:nth-child(even) {
+	background: rgba(1,1,1,0.05); 
+}
+
+.results-table-row:hover {
+	background: rgba(1,1,1,0.1);
+}
+
+.results-table-head, .results-table-row {
+	height: 2rem;
+}
+
+.results-table-head {
+	color: #eee;
+	background: rgba(1,1,1,0.5);
+	font-size: 1.2rem;
+}
+
+th, td, thead {
+	text-align: center;
+}
+
+.email-wrapper {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-email {
+	font-family: Merriweather, georgia, serif;
+	font-size: 0.85rem;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(1,1,1,0.7);
+	width: 60%;
+}
+
+.btn-wrapper {
+	margin: 0;
+	width: 10%;
+	border-bottom: 1px solid rgba(1,1,1,0.7);
+	background: transparent;
+}
+
+.btn-copy-email {
+	width: 100%;
+	background: transparent;
+	border: none;
+	position: relative;
+}
+
+.btn-copy-email .tooltiptext {
+	visibility: hidden;
+	background-color: rgba(1,1,1,0.7);
+	height: 1rem;
+	width: 7.5rem;
+	right: 105%;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	position: absolute;
+	z-index: 1;
+}
+
+.btn-copy-email:hover .tooltiptext {
+	visibility: visible;
+}
+
+.btn-copy-email .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent rgba(1,1,1,0.7);
+}
+
+.no-results-msg {
+	margin-top: 5%;
+	font-family: Merriweather, georgia, serif;
+	font-size: 2rem;
+	color: ghostwhite;
+}
+
+.no-results-text {
+	font-family: Merriweather, georgia, serif;
+	font-size: 1rem;
+	color: ghostwhite;
+}
+
+.no-results-link {
+	margin-top: 5%;
+	font-family: Merriweather, georgia, serif;
+	font-size: 1rem;
+	color: ghostwhite;
+}
+
+.no-results-link:hover {
+	color: #999;
+}
+
+.fp-logo-3 {
+    width: 35%;
+	z-index: 2;
+	position: inherit;
+	margin-top: 9rem;
+	opacity: 0.7;
+}
+
+/**
+ * -------------
+ * forbidden CSS
+ * -------------
+**/
+
+.forbidden-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+.layout--forbidden {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #ffffff;
+	color: #666;
+	text-align: center;
+	font-family: arial, sans-serif;
+	
+}
+
+.h1--forbidden {
+	font-size: 100%;
+	color: #404040;
+	line-height: 1.5em;
+	color: ghostwhite;
+}
+
+.dialog--forbidden {
+	width: 25em;
+	padding: 1em 6em;
+	margin: 16em 9em 11em -13em;
+	border: 1px solid #ccc;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	position: fixed;
+	margin-top: 12rem;
+	margin-left: 1rem;	
+}
+
+/**
+ * -------------
+ * userInventory CSS
+ * -------------
+**/
+
+.ip-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+.inventory-wrapper {
+	width: 100%;
+	height: 100%;
+ 	display: flex;
+	flex-direction: row;
+}
+
+.table-delete input[type="submit"],
+.table-delete input[type="button"]{
+	background: rgb(88, 76, 53);
+    border: none;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0.3rem;
+    border-bottom: 3px solid #c5c8ce;
+    border-radius: 3px;
+    color: #D2E2FF;
+    
+}
+.table-delete input[type="submit"]:hover,
+.table-delete input[type="button"]:hover{
+    background: #c16928;
+    color:#fff;
+}
+
+/**
+ * -------------
+ * adv_search CSS
+ * -------------
+**/
+
+.as-background {
+	height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;
+}
+
+.adv-search-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -15rem;
+}
+
+/**
+ * -------------
+ * createUser CSS
+ * -------------
+**/
+
+.register-background {
+	min-height: 100%;
+	width: 100%;
+	background-image: url("blur1-weeblur.jpg");
+	background-size: cover;	
+}

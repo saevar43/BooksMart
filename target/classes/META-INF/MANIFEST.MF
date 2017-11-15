@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: BooksMart
+Implementation-Version: 1.0
+Built-By: saevar43
+Implementation-Vendor-Id: HBV501G
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/BooksMart/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
