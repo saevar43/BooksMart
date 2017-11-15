@@ -35,7 +35,7 @@ import is.hi.booksmart.services.UserService;
  * Controller that dictates what is done when the user or UI sends an instruction.
  **/
 @Controller
-@RequestMapping("") // Request Mapping so that every site starts with /app. 
+@RequestMapping("/app/") // Request Mapping so that every site starts with /app.
 public class AppController 	{
 
 

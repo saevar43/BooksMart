@@ -22,7 +22,7 @@ import is.hi.booksmart.services.UserService;
  **/
 
 @Controller
-@RequestMapping("")
+@RequestMapping("/app/")
 public class LoginController {
 
 	@Autowired
