@@ -15,22 +15,22 @@ import is.hi.booksmart.services.UserService;
 
 /**
  * @author Kári Geir Gunnarsson <kgg5@hi.is>
- * @date October 2017 
+ * @date October 2017
  * HBV501G Software Project 1
- * 
+ *
  * Controller that handles all functionality associated with logging in.
  **/
 
 @Controller
-@RequestMapping("/app")
+@RequestMapping("")
 public class LoginController {
 
 	@Autowired
 	UserService userService;
-	
+
 	/**
 	 * Display login page.
-	 * 
+	 *
 	 * @param error
 	 * @param logout
 	 * @param model
@@ -41,13 +41,13 @@ public class LoginController {
 	@RequestParam(required = false) String logout, ModelMap model) {
 
 		model.addAttribute("loginPage");
-		
+
 		return "app/login";
 	}
-	
+
 	/**
 	 * Login.
-	 * 
+	 *
 	 * @param session
 	 * @param username
 	 * @param password
@@ -55,17 +55,17 @@ public class LoginController {
 	 * @return String pointing to .jsp file.
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginConfirm(HttpSession session, 
+	public String loginConfirm(HttpSession session,
 	@RequestParam(value="username", required=true) String username,
     @RequestParam(value="pw", required=true) String password,
 	ModelMap model) {
 		User user = userService.getUserbyUsername(username);
-		
+
 		if (user == null) {
 			model.addAttribute("error", "Username not found");
 			return "app/login";
 		}
-		
+
 		if (!user.getPw().equals(password)) {
 			model.addAttribute("error", "Wrong password. Try again.");
 			return "app/login";
@@ -73,13 +73,13 @@ public class LoginController {
 
 		session.setAttribute("myUser", user);
 		System.out.println(model.get("loggedIn"));
-		
+
 		return "redirect:./";
 	}
-	
+
 	/**
 	 * Logout.
-	 * 
+	 *
 	 * @param session
 	 * @param model
 	 * @return String pointing to .jsp file.
@@ -89,5 +89,5 @@ public class LoginController {
 		session.invalidate();
 		return "app/search";
 	}
-	
+
 }
