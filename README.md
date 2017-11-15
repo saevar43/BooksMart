@@ -1,27 +1,32 @@
-# SpringBootMVC
-Project skeleton for Software Project class in the University of Iceland.
+# HBV501G Hugbúnaðarverkefni 1, 2017
 
-## How do I get this ?
-Your IDE ([IntelliJ](https://www.jetbrains.com/idea/), [Eclipse](https://eclipse.org/), [Spring Tool Suit](https://spring.io/tools)) should be able to clone a project from Github.
-It should be easy to find information regarding how to do that for your chosen IDE.
-It's also possible to download the project as a .zip [here](https://github.com/mbook/SpringBootMVC/archive/master.zip).
+BooksMart - An innovative software solution that offers a simple solution for selling and purchasing textbooks.
 
-## How do I run this ?
-This project is setup using [Maven](https://maven.apache.org/what-is-maven.html) as a dependency manager, so if your IDE does not manage that, or you don't have it installed you can look [here](https://maven.apache.org/install.html) for further information.
-When all the dependencies are downloaded, you can run the project by running the ``main()`` method in the class ``Application`` and then enter [localhost:8080](http://localhost:8080) into the address bar of your favorite web browser.
+## Getting Started
 
-## What is going on ?
-Look at the code and find the comments I wrote. I tried explaining what was happening in such a way that it should hopefully be easy to understand.
+To run the project you'll first need to download it as a whole and un-zip it. Next you'll need an Integrated Development Environment (IDE) to run it and a software to host it locally on a virtual server.
 
-### What did you use to make this ?
-I used IntelliJ Ultimate with Maven to setup this project. Students and Teachers get the Ultimate edition for free, apply [here](https://www.jetbrains.com/student/).
+### Prerequisites
 
-### Database
-This project assumes there is a database called HBV at the URL: postgresql://localhost:5432/HBV .   
-See username and password in [application.properties](https://github.com/danielpall/SpringBootMVC/blob/master/src/main/resources/application.properties)
+- Integrated Development Environment (IDE)
+  For an example: Eclipse (https://www.eclipse.org/)
 
-### Where can I find help ?
-In case of any questions, please refer to the "Spring Boot Intro" slides in the HBV501G Verkefni folder on Ugla, or contact your tutor.
+- Java servlet
+  For an example: Apache Tomcat (http://tomcat.apache.org/)
 
-### Credits
-This skeleton project was originally created by Daníel Páll Jóhannsson while tutoring the HBV501G course in Fall 2015. Daníel has since moved on to work at TM Software. Therefore, please direct any questions to *your own* tutors - thanks :-)
+- Object-relational database management system (ORDBMS)
+  For an example: PostgreSQL (https://postgresql.org/)
+
+## Built With
+
+* [Eclipse](https://www.eclipse.org/) - The Integrated Development Environment (IDE) used
+* [Apache Tomcat](http://tomcat.apache.org/) - The Java servlet used Dependency Management
+* [PostgreSQL](https://postgresql.org/) - The Object-relational database management system (ORDBMS) used
+
+## Authors
+
+### * **Teymi 8**
+* **Kári Geir Gunnarsson** - (kgg5@hi.is)
+* **Pétur Erlendsson** - (pee4@hi.is)
+* **Suzanna Sofia** - (ssp5@hi.is)
+* **Sævar Ingi Sigurðsson** - (sis108@hi.is)
