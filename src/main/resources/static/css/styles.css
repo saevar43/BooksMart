@@ -111,7 +111,7 @@ body {
 }
 
 #content {
-	padding-top: 14em;	
+	padding-top: 14em;
 }
 
 .search-bar {
@@ -225,9 +225,9 @@ body {
 	z-index: 1;
 	font-size: 0.8em;
 	border-radius: 25px;
-	padding: 15px; 
+	padding: 15px;
 	width: 170px;
-	height: 130px; 
+	height: 130px;
  }
 
 .dropdown-content a {
@@ -369,7 +369,7 @@ body {
 	padding: 2rem;
 	border-radius: 25px;
 	border: 1px solid ghostwhite;
-	
+
 }
 
 .app-title {
@@ -430,7 +430,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: -13rem;
+	margin-top: -9rem;
 }
 
 .addBook {
@@ -443,7 +443,7 @@ body {
 }
 
 .addBook-screen {
-	background-color: rgba(109, 74, 21, 0.82);
+	background-color: rgba(105, 90, 67, 0.82);
 	padding: 2rem;
 	border-radius: 25px;
 	border: 1px solid ghostwhite;
@@ -593,7 +593,7 @@ body {
 	cursor: pointer;
 	padding-top: 0.35rem;
  }
- 
+
  .side-input-btn:focus {
  	outline:0;
  }
@@ -602,7 +602,7 @@ body {
 	overflow: hidden;
 	font-family: Merriweather, georgia, serif;
 	font-size: 0.85rem;
- 	margin-top: 5%; 
+ 	margin-top: 5%;
 	width: 7git 5%;
 	border-spacing: 0;
 	border: 1px solid black;
@@ -614,7 +614,7 @@ body {
 }
 
 .results-table-row:nth-child(even) {
-	background: rgba(1,1,1,0.05); 
+	background: rgba(1,1,1,0.05);
 }
 
 .results-table-row:hover {
@@ -745,7 +745,7 @@ th, td, thead {
 	color: #666;
 	text-align: center;
 	font-family: arial, sans-serif;
-	
+
 }
 
 .h1--forbidden {
@@ -764,7 +764,7 @@ th, td, thead {
 	border-bottom-color: #999;
 	position: fixed;
 	margin-top: 12rem;
-	margin-left: 1rem;	
+	margin-left: 1rem;
 }
 
 /**
@@ -796,7 +796,7 @@ th, td, thead {
     border-bottom: 3px solid #c5c8ce;
     border-radius: 3px;
     color: #D2E2FF;
-    
+
 }
 .table-delete input[type="submit"]:hover,
 .table-delete input[type="button"]:hover{
@@ -834,5 +834,5 @@ th, td, thead {
 	min-height: 100%;
 	width: 100%;
 	background-image: url("blur1-weeblur.jpg");
-	background-size: cover;	
+	background-size: cover;
 }
